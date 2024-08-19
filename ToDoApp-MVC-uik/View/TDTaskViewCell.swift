@@ -2,13 +2,14 @@
 //  TDTaskViewCell.swift
 //  ToDoApp-MVC-uik
 //
-//  Created by Paola Delgadillo on 8/18/24.
+//  Created by Israel Aguilar on 8/17/24.
 //
 
 import UIKit
 
 class TDTaskViewCell: UITableViewCell {
 
+    @IBOutlet weak var TDTaskTitle: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

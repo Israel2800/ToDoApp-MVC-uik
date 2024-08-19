@@ -13,6 +13,10 @@
 		C65D339E2C712B02002A7EBE /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C65D339D2C712B02002A7EBE /* Base */; };
 		C65D33A02C712B04002A7EBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C65D339F2C712B04002A7EBE /* Assets.xcassets */; };
 		C65D33A32C712B04002A7EBE /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C65D33A22C712B04002A7EBE /* Base */; };
+		C65D33AC2C712BA9002A7EBE /* TDTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65D33AB2C712BA9002A7EBE /* TDTask.swift */; };
+		C65D33AE2C712BF0002A7EBE /* TDTaskDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65D33AD2C712BF0002A7EBE /* TDTaskDataManager.swift */; };
+		C65D33B52C71330A002A7EBE /* TDTaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65D33B42C71330A002A7EBE /* TDTaskListViewController.swift */; };
+		C65D33B72C72E1F1002A7EBE /* TDTaskViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65D33B62C72E1F1002A7EBE /* TDTaskViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		C65D339F2C712B04002A7EBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C65D33A22C712B04002A7EBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C65D33A42C712B04002A7EBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C65D33AB2C712BA9002A7EBE /* TDTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDTask.swift; sourceTree = "<group>"; };
+		C65D33AD2C712BF0002A7EBE /* TDTaskDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDTaskDataManager.swift; sourceTree = "<group>"; };
+		C65D33B42C71330A002A7EBE /* TDTaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDTaskListViewController.swift; sourceTree = "<group>"; };
+		C65D33B62C72E1F1002A7EBE /* TDTaskViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDTaskViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,9 @@
 		C65D33952C712B02002A7EBE /* ToDoApp-MVC-uik */ = {
 			isa = PBXGroup;
 			children = (
+				C65D33B82C72F67C002A7EBE /* Controller */,
+				C65D33AF2C713106002A7EBE /* View */,
+				C65D33AA2C712B76002A7EBE /* Model */,
 				C65D33962C712B02002A7EBE /* AppDelegate.swift */,
 				C65D33982C712B02002A7EBE /* SceneDelegate.swift */,
 				C65D339A2C712B02002A7EBE /* ViewController.swift */,
@@ -65,6 +76,31 @@
 				C65D33A42C712B04002A7EBE /* Info.plist */,
 			);
 			path = "ToDoApp-MVC-uik";
+			sourceTree = "<group>";
+		};
+		C65D33AA2C712B76002A7EBE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C65D33AB2C712BA9002A7EBE /* TDTask.swift */,
+				C65D33AD2C712BF0002A7EBE /* TDTaskDataManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C65D33AF2C713106002A7EBE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C65D33B62C72E1F1002A7EBE /* TDTaskViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C65D33B82C72F67C002A7EBE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C65D33B42C71330A002A7EBE /* TDTaskListViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +175,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C65D339B2C712B02002A7EBE /* ViewController.swift in Sources */,
+				C65D33B52C71330A002A7EBE /* TDTaskListViewController.swift in Sources */,
 				C65D33972C712B02002A7EBE /* AppDelegate.swift in Sources */,
+				C65D33AE2C712BF0002A7EBE /* TDTaskDataManager.swift in Sources */,
+				C65D33AC2C712BA9002A7EBE /* TDTask.swift in Sources */,
 				C65D33992C712B02002A7EBE /* SceneDelegate.swift in Sources */,
+				C65D33B72C72E1F1002A7EBE /* TDTaskViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +335,7 @@
 				DEVELOPMENT_TEAM = UMHY4G42PY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ToDoApp-MVC-uik/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ToDoApp-MVC-uik";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -307,9 +348,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.israelaguilar-ddadm12.ToDoApp-MVC-uik";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,6 +368,7 @@
 				DEVELOPMENT_TEAM = UMHY4G42PY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ToDoApp-MVC-uik/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ToDoApp-MVC-uik";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -335,9 +381,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.israelaguilar-ddadm12.ToDoApp-MVC-uik";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
